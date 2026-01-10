@@ -3,6 +3,7 @@
   packages = [
     pkgs.nodejs_20
     pkgs.nodePackages.firebase-tools
+    pkgs.gh
   ];
   env = {};
   idx = {
