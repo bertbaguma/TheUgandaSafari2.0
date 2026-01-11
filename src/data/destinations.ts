@@ -1,0 +1,100 @@
+import { Destination } from '../types';
+
+export const DESTINATIONS: Destination[] = [
+  { 
+    id: 'bwindi', 
+    name: 'Bwindi Impenetrable National Park', 
+    shortCode: 'BINP',
+    hint: 'Gorillas, Trekking',
+    description: "Step into Bwindi’s misty rainforest for life-changing gorilla trekking in Uganda, where ancient trees shelter the world’s rarest mountain gorillas. Every trek reveals deep silence, earthy scents, and a soul-stirring bond with nature. Stay at Nkuringo Gorilla Lodge*, an eco-luxury base leading conservation and community-powered tourism.",
+    imageUrl: 'https://picsum.photos/seed/bwindi/800/600',
+    parkFee: 40,
+    flyInAirstrip: true,
+    keywords: ['mountain gorillas', 'gorilla trekking', 'Buhoma', 'Nkuringo', 'Ruhija', 'Rushaga', 'Batwa pygmies', 'birding', 'impenetrable forest', 'UNESCO World Heritage site', 'primates', 'gorillas', 'trekking', 'gorilla tracking', 'apes', 'rainforest', 'misty', 'giants', 'mountain gorilla', 'gorilla', 'forest'],
+    activities: [
+      { id: 'binp-gorilla-tracking', name: 'Gorilla Tracking', durationTag: 'All-day', description: 'An unforgettable journey to see mountain gorillas in their natural habitat.', price: 800, unit: 'per person', includesParkEntryFee: true, requiresVehicle: true, isFullDay: true, permitProcessingFee: 30 },
+      { id: 'binp-gorilla-habituation', name: 'Gorilla Habituation Experience', durationTag: 'All-day', description: 'Spend more time with a gorilla family that is being habituated.', price: 1500, unit: 'per person', includesParkEntryFee: true, requiresVehicle: true, isFullDay: true, permitProcessingFee: 30 },
+      { id: 'binp-bird-watching', name: 'Bird Watching & Nature Walk', durationTag: 'Morning', description: 'Explore the diverse flora and fauna of the ancient rainforest.', price: 40, unit: 'per person', includesParkEntryFee: false, requiresVehicle: false },
+      { id: 'binp-batwa-experience', name: 'Batwa Forest Experience', durationTag: 'Afternoon', description: 'Visit the indigenous Batwa community and learn about their traditional forest life.', price: 40, unit: 'per person', includesParkEntryFee: false, requiresVehicle: false },
+      { id: 'binp-long-walk', name: 'Long Walk (Buhoma-Nkuringo)', durationTag: 'All-day', description: 'A scenic guided walk between the Buhoma and Nkuringo sectors of the park.', price: 60, unit: 'per person', includesParkEntryFee: false, requiresVehicle: false },
+    ]
+  },
+  { 
+    id: 'queen-elizabeth', 
+    name: 'Queen Elizabeth National Park', 
+    shortCode: 'QENP',
+    hint: 'Safari, Lions, Boat Cruise',
+    description: "Uganda's most popular park, boasting diverse ecosystems from savannah to forests and wetlands.",
+    imageUrl: 'https://picsum.photos/seed/qenp/800/600',
+    parkFee: 40,
+    flyInAirstrip: true,
+    keywords: ['tree-climbing lions', 'Ishasha', 'Kazinga Channel', 'boat cruise', 'safari', 'elephants', 'buffalo', 'hippo', 'Kyambura Gorge', 'chimpanzees', 'Mweya Peninsula', 'game drive'],
+    activities: [
+      { id: 'qenp-game-drive', name: 'Guided Game Drive', description: 'Explore the Kasenyi plains, famous for lions, elephants, and vast herds of Uganda Kob.', price: 25, unit: 'per guide', includesParkEntryFee: false, requiresVehicle: true },
+      { id: 'qenp-launch-trip', name: 'Kazinga Channel Launch Trip', description: 'A boat safari with incredible sightings of hippos, crocodiles, buffalo, and diverse birdlife.', price: 30, unit: 'per person', includesParkEntryFee: false, requiresVehicle: true },
+      { id: 'qenp-lion-tracking', name: 'Lion Tracking Experience', description: 'Join researchers to track and learn about the park\'s famous tree-climbing lions.', price: 200, unit: 'per person', includesParkEntryFee: true, requiresVehicle: true, permitProcessingFee: 30 },
+      { id: 'qenp-chimp-tracking', name: 'Chimp Tracking (Kyambura Gorge)', description: 'Descend into the "Valley of Apes" to track a troop of habituated chimpanzees.', price: 100, unit: 'per person', includesParkEntryFee: true, requiresVehicle: true, permitProcessingFee: 30 },
+      { id: 'qenp-mongoose-tracking', name: 'Mongoose Tracking', description: 'An experiential tourism activity on the Mweya Peninsula.', price: 30, unit: 'per person', includesParkEntryFee: true, requiresVehicle: true, permitProcessingFee: 30 },
+    ]
+  },
+  { 
+    id: 'kibale', 
+    name: 'Kibale Forest National Park', 
+    shortCode: 'KNP',
+    hint: 'Chimpanzees, Primates',
+    description: 'Known as the "Primate Capital of the World," with 13 species of primates.',
+    imageUrl: 'https://picsum.photos/seed/kibale/800/600',
+    parkFee: 40,
+    flyInAirstrip: true,
+    keywords: ['chimpanzee tracking', 'chimp habituation', 'primate capital', 'Bigodi Wetland Sanctuary', 'monkeys', 'red colobus', "L'Hoest's monkey", 'forest walk', 'chimps'],
+    activities: [
+      { id: 'knp-chimp-tracking', name: 'Chimpanzee Tracking', description: 'An unforgettable trek to find and observe our closest living relatives.', price: 250, unit: 'per person', includesParkEntryFee: true, requiresVehicle: true, permitProcessingFee: 30 },
+      { id: 'knp-chimp-habituation', name: 'Chimpanzee Habituation (Full Day)', description: 'Spend a full day with researchers and a chimpanzee troop undergoing habituation.', price: 300, unit: 'per person', includesParkEntryFee: true, requiresVehicle: true, isFullDay: true, permitProcessingFee: 30 },
+      { id: 'knp-children-walk', name: 'Guided Short Walk for Children', description: 'A safe and educational nature walk for young explorers.', price: 5, unit: 'per person', includesParkEntryFee: false, requiresVehicle: false },
+    ]
+  },
+  { 
+    id: 'murchison-falls', 
+    name: 'Murchison Falls National Park', 
+    shortCode: 'MFNP',
+    hint: 'Waterfall, Game Drives',
+    description: "Famous for its powerful waterfall where the Nile River forces its way through a narrow gorge.",
+    imageUrl: 'https://picsum.photos/seed/murchison/800/600',
+    parkFee: 45,
+    flyInAirstrip: true,
+    keywords: ['Nile river', 'boat cruise', 'top of the falls hike', "Rothschild's giraffe", 'game drive', 'delta', 'shoebill stork', 'Paraa', 'waterfall'],
+    activities: [
+      { id: 'mfnp-launch-trip', name: 'Launch Trip to Falls Bottom', description: 'A boat cruise on the Nile to the base of the spectacular Murchison Falls.', price: 30, unit: 'per person', includesParkEntryFee: false, requiresVehicle: true },
+      { id: 'mfnp-game-drive', name: 'Guided Game Drive', description: 'Search for lions, giraffes, elephants, and leopards on the northern bank.', price: 25, unit: 'per guide', includesParkEntryFee: false, requiresVehicle: true },
+      { id: 'mfnp-hike-top-falls', name: 'Hike to Top of Falls', description: 'A rewarding hike to see the powerful waterfall from above.', price: 15, unit: 'per person', includesParkEntryFee: false, requiresVehicle: true },
+      { id: 'mfnp-night-drive', name: 'Night Game Drive', description: 'Discover the park\'s nocturnal animals with a spotlight.', price: 40, unit: 'per person', includesParkEntryFee: false, requiresVehicle: true },
+      { id: 'mfnp-bird-watching', name: 'Bird Watching', description: 'A guided walk to spot some of the 451 bird species in the park.', price: 25, unit: 'per person', includesParkEntryFee: false, requiresVehicle: false },
+    ]
+  },
+  { id: 'lake-mburo', name: 'Lake Mburo National Park', shortCode: 'LMNP', parkFee: 40, activities: [], description: 'Known for zebras, impalas, and unique walking and horseback safaris.', imageUrl: 'https://picsum.photos/seed/mburo/800/600', flyInAirstrip: true, keywords: ['zebras', 'giraffes', 'impala', 'walking safari', 'horseback riding safari', 'night game drive', 'Ankole cattle'] },
+  { id: 'mgahinga', name: 'Mgahinga Gorilla National Park', shortCode: 'MGNP', parkFee: 40, activities: [], description: 'Where silver meets gold: track gorillas and golden monkeys in the Virunga volcanoes.', imageUrl: 'https://picsum.photos/seed/mgahinga/800/600', flyInAirstrip: true, keywords: ['mountain gorillas', 'golden monkey tracking', 'Virunga volcanoes', 'Mount Sabinyo', 'Mount Gahinga', 'Mount Muhabura', 'Batwa trail', 'three volcanoes'] },
+  { id: 'kidepo-valley', name: 'Kidepo Valley National Park', shortCode: 'KVNP', parkFee: 40, activities: [], description: 'A remote, rugged wilderness in northern Uganda, home to ostriches and cheetahs.', imageUrl: 'https://picsum.photos/seed/kidepo/800/600', flyInAirstrip: true, keywords: ['remote wilderness', 'ostriches', 'cheetahs', 'Narus Valley', 'Apoka', 'Karamojong people', 'rugged savannah', 'big game'] },
+  { id: 'jinja', name: 'Jinja', parkFee: 0, activities: [], description: 'The adventure capital of East Africa, located at the source of the Nile River.', imageUrl: 'https://picsum.photos/seed/jinja/800/600', keywords: ['source of the Nile', 'white-water rafting', 'kayaking', 'bungee jumping', 'Owen Falls Dam', 'adventure capital', 'quad biking'] },
+  { id: 'sipi-falls', name: 'Sipi Falls', parkFee: 0, activities: [], description: 'A series of three stunning waterfalls on the edge of Mount Elgon National Park.', imageUrl: 'https://picsum.photos/seed/sipi/800/600', keywords: ['Mount Elgon', 'hiking', 'waterfalls', 'abseiling', 'coffee tours', 'beautiful scenery', 'Kapchorwa'] },
+  { id: 'semuliki', name: 'Semuliki National Park', shortCode: 'SNP', parkFee: 35, activities: [], description: "Experience the Sempaya hot springs and unique birdlife from the Ituri Forest.", imageUrl: 'https://picsum.photos/seed/semuliki/800/600', flyInAirstrip: true, keywords: ['Sempaya hot springs', 'bird watching', 'Ituri forest', 'shoebill stork', 'Congo basin biome', 'primates'] },
+  { id: 'ziwa-rhino', name: 'Ziwa Rhino Sanctuary', parkFee: 20, activities: [], description: 'The only place in Uganda to track wild southern white rhinos on foot.', imageUrl: 'https://picsum.photos/seed/ziwa/800/600', keywords: ['rhino tracking', 'white rhinos', 'conservation', 'Nakasongola', 'breeding program', 'rhinos'] },
+  { id: 'kampala', name: 'Kampala', parkFee: 0, activities: [], description: "Uganda's vibrant capital city, offering rich cultural and historical experiences.", imageUrl: 'https://picsum.photos/seed/kampala/800/600', keywords: ['capital city', 'boda boda tours', 'Gaddafi National Mosque', 'Kasubi Tombs', 'Namugongo Martyrs Shrine', 'craft markets', 'nightlife'] },
+  { id: 'entebbe', name: 'Entebbe', parkFee: 0, activities: [], description: 'A relaxed town on Lake Victoria, home to the international airport and wildlife sanctuaries.', imageUrl: 'https://picsum.photos/seed/entebbe/800/600', flyInAirstrip: true, keywords: ['EBB', 'airport', 'Lake Victoria', 'UWEC', 'Uganda Wildlife Education Centre', 'Botanical Gardens', 'Ngamba Island Chimpanzee Sanctuary'] },
+];
+
+export const SAFARI_CIRCUIT_SUGGESTIONS: Record<string, string[]> = {
+    'entebbe': ['lake-mburo', 'kampala', 'jinja'],
+    'kampala': ['ziwa-rhino', 'lake-mburo', 'jinja'],
+    'kigali': ['bwindi', 'mgahinga'],
+    'lake-mburo': ['queen-elizabeth', 'bwindi', 'kampala', 'entebbe'],
+    'bwindi': ['queen-elizabeth', 'mgahinga', 'lake-mburo'],
+    'mgahinga': ['bwindi', 'lake-mburo'],
+    'queen-elizabeth': ['kibale', 'bwindi', 'lake-mburo'],
+    'kibale': ['queen-elizabeth', 'murchison-falls', 'semuliki', 'kampala'],
+    'semuliki': ['kibale'],
+    'ziwa-rhino': ['murchison-falls', 'kampala'],
+    'murchison-falls': ['kibale', 'kidepo-valley', 'ziwa-rhino', 'jinja'],
+    'kidepo-valley': ['murchison-falls', 'sipi-falls'],
+    'jinja': ['sipi-falls', 'kampala'],
+    'sipi-falls': ['kidepo-valley', 'jinja'],
+};

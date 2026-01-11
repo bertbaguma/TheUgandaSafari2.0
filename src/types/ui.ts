@@ -1,0 +1,15 @@
+export enum View {
+  Home = 'HOME',
+  ItineraryBuilder = 'ITINERARY_BUILDER',
+  ExpertsHub = 'EXPERTS_HUB',
+  ConsultantDashboard = 'CONSULTANT_DASHBOARD',
+  TripManagement = 'TRIP_MANAGEMENT',
+  AdminHub = 'ADMIN_HUB',
+  TripDashboard = 'TRIP_DASHBOARD',
+  Booking = 'BOOKING',
+  EditProfile = 'EDIT_PROFILE',
+  ReviewManagement = 'REVIEW_MANAGEMENT',
+  Help = 'HELP',
+  Reports = 'REPORTS',
+  Blog = 'BLOG',
+}
