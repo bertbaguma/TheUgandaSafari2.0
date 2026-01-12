@@ -1,28 +1,28 @@
-export interface Room {
-  id:string;
+
+export type PricingModel = 'perPerson' | 'perNight';
+
+export interface LodgeRoom {
+  id: string;
   name: string;
   maxOccupancy: number;
-  pricingModel: 'perPerson' | 'perNight';
-
-  // For 'perPerson' model
+  pricingModel: PricingModel;
   lowSeasonPriceSingle?: number;
-  lowSeasonPriceDouble?: number; // per person rate
+  lowSeasonPriceDouble?: number;
   highSeasonPriceSingle?: number;
-  highSeasonPriceDouble?: number; // per person rate
+  highSeasonPriceDouble?: number;
 
-  // For 'perNight' model
-  lowSeasonPricePerNight?: number; // flat rate for the room
+  // For 'perNight' pricing model
+  lowSeasonPricePerNight?: number;
   highSeasonPricePerNight?: number;
 }
-
 
 export interface Lodge {
   id: string;
   name: string;
   destinationId: string;
   isDefault: boolean;
-  rooms: Room[];
   imageUrl?: string;
   keywords?: string[];
   features?: string[];
+  rooms: LodgeRoom[];
 }

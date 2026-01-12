@@ -1,13 +1,17 @@
-import { Room } from './lodge';
 
-export interface LodgeRateOverride extends Partial<Pick<Room, 
+import { LodgeRoom } from './lodge';
+
+// Use Pick to create a type with only the price properties from LodgeRoom
+export type PriceOverrides = Partial<Pick<LodgeRoom, 
   'lowSeasonPriceSingle' | 
   'lowSeasonPriceDouble' | 
   'highSeasonPriceSingle' | 
   'highSeasonPriceDouble' | 
   'lowSeasonPricePerNight' | 
   'highSeasonPricePerNight'
->> {
+>>;
+
+export interface LodgeRateOverride extends PriceOverrides {
   roomId: string;
 }
 
@@ -26,10 +30,8 @@ export interface Consultant {
   imageUrl: string;
   specialties: string[];
   isAvailable: boolean;
-  commissionRate?: number; // This is the consultant-set rate
-  adminCommissionRateOverride?: number; // Admin-set override, takes precedence
-  canSetCommissionRate?: boolean; // Admin flag to allow/disallow editing of commissionRate
-  showCommissionRateOnProfile?: boolean; // Control visibility on public profile
+  commissionRate?: number; 
+  showCommissionRateOnProfile?: boolean; 
   socials?: {
     linkedin?: string;
     instagram?: string;

@@ -1,6 +1,6 @@
-export type User = {
+export interface User {
   id: string;
   name: string;
-  role: 'admin' | 'consultant';
-  imageUrl?: string;
-};
+  email: string;
+  roles: string[]; // e.g., ['traveler', 'consultant']
+}
