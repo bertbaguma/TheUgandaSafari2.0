@@ -1,29 +1,34 @@
-import { Review } from '../types';
+import { Review } from '../types.js';
 
 export const MOCK_REVIEWS: Review[] = [
-  {
-    id: 'r1',
-    itineraryId: 'TU-COMPLETED1',
-    consultantId: 'c1',
-    travelerName: 'Sarah J.',
-    rating: 5,
-    comment: '''Cathy was incredible! Her knowledge of the gorillas in Bwindi was amazing. She made our trip unforgettable. Highly recommended!''',
-    consultantReply: 'Thank you, Sarah! It was a pleasure planning your adventure. So glad you enjoyed the gorillas!'
-  },
-  {
-    id: 'r2',
-    itineraryId: 'TU-COMPLETED2',
-    consultantId: 'c2',
-    travelerName: 'Mike & Lisa',
-    rating: 5,
-    comment: '''Diana organized a fantastic cultural tour. We learned so much and felt truly welcomed by the local communities. Uganda Safari is a fantastic platform.''',
-  },
-   {
-    id: 'r3',
-    itineraryId: 'TU-COMPLETED3',
-    consultantId: 'c1',
-    travelerName: 'Chen W.',
-    rating: 4,
-    comment: '''Great trip to Murchison Falls. Cathy was very professional. The boat cruise was the highlight. Only wish we had more time!''',
-  }
+    {
+        id: 'r1',
+        consultantId: 'c1',
+        rating: 5,
+        comment: 'Cathy was incredible! Her knowledge of the gorillas was amazing and she made the whole experience unforgettable. Highly recommend!'
+    },
+    {
+        id: 'r2',
+        consultantId: 'c1',
+        rating: 5,
+        comment: 'I learned so much about the local birds from Cathy. She has a real passion for wildlife.'
+    },
+    {
+        id: 'r3',
+        consultantId: 'c2',
+        rating: 5,
+        comment: 'Diana organized a fantastic cultural tour for us. We felt so welcomed by the local community and learned so much about their way of life.'
+    },
+    {
+        id: 'r4',
+        consultantId: 'c3',
+        rating: 4,
+        comment: 'Moreen is a great guide for photographers. She knows all the best spots and has a lot of patience.'
+    },
+    {
+        id: 'r5',
+        consultantId: 'c4',
+        rating: 5,
+        comment: 'The Sipi Falls hike was the highlight of our trip! Joan was a fantastic guide, so knowledgeable and encouraging.'
+    }
 ];

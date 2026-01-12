@@ -1,10 +1,15 @@
 {
   "compilerOptions": {
     "composite": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "dist-server",
     "skipLibCheck": true,
-    "module": "ESNext",
-    "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true
   },
-  "include": ["vite.config.ts"]
+  "include": [
+    "seed_db.ts",
+    "src/data/**/*.ts",
+    "src/types.ts"
+  ]
 }

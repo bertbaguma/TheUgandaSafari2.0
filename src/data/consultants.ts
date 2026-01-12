@@ -1,4 +1,4 @@
-import { Consultant } from '../types';
+import { Consultant } from '../types.js';
 
 export const MOCK_CONSULTANTS: Consultant[] = [
   {
@@ -6,7 +6,7 @@ export const MOCK_CONSULTANTS: Consultant[] = [
     name: 'Cathy Nabbaale',
     email: 'cathy.nabbaale@example.com',
     phone: '+256 772 123456',
-    bio: '''With over 15 years of experience guiding safaris, Cathy has an unparalleled knowledge of Uganda\'s wildlife and ecosystems. She specializes in primate encounters.''',
+    bio: `With over 15 years of experience guiding safaris, Cathy has an unparalleled knowledge of Uganda's wildlife and ecosystems. She specializes in primate encounters.`,
     imageUrl: 'https://picsum.photos/seed/cathy/400/400',
     specialties: ['Gorilla Trekking', 'Chimpanzee Tracking', 'Bird Watching'],
     isAvailable: true,
@@ -50,7 +50,7 @@ export const MOCK_CONSULTANTS: Consultant[] = [
     name: 'Diana Nalubega',
     email: 'diana.nalubega@example.com',
     phone: '+256 772 234567',
-    bio: '''Diana is a passionate conservationist and cultural guide. She loves connecting travelers with local communities for authentic experiences. Her focus is on sustainable tourism.''',
+    bio: `Diana is a passionate conservationist and cultural guide. She loves connecting travelers with local communities for authentic experiences. Her focus is on sustainable tourism.`,
     imageUrl: 'https://picsum.photos/seed/diana/400/400',
     specialties: ['Cultural Tours', 'Community Visits', 'Adventure Travel'],
     isAvailable: true,
@@ -94,7 +94,7 @@ export const MOCK_CONSULTANTS: Consultant[] = [
     name: 'Moreen Tumishabe',
     email: 'moreen.tumishabe@example.com',
     phone: '+256 772 345678',
-    bio: '''A photography enthusiast and an expert in the northern safari circuit, Moreen knows the best spots in Kidepo Valley to capture that perfect shot. She is an expert in big cat behavior.''',
+    bio: `A photography enthusiast and an expert in the northern safari circuit, Moreen knows the best spots in Kidepo Valley to capture that perfect shot. She is an expert in big cat behavior.`,
     imageUrl: 'https://picsum.photos/seed/moreen/400/400',
     specialties: ['Wildlife Photography', 'Kidepo Valley', 'Big Game Safaris'],
     isAvailable: false,
@@ -137,7 +137,7 @@ export const MOCK_CONSULTANTS: Consultant[] = [
     name: 'Joan Muduwa',
     email: 'joan.muduwa@example.com',
     phone: '+256 772 456789',
-    bio: '''Joan is an adventure travel specialist with a love for Uganda\'s hidden gems. From the roaring Sipi Falls to the tranquil crater lakes, she crafts itineraries that blend adrenaline with authentic local encounters.''',
+    bio: `Joan is an adventure travel specialist with a love for Uganda's hidden gems. From the roaring Sipi Falls to the tranquil crater lakes, she crafts itineraries that blend adrenaline with authentic local encounters.`,
     imageUrl: 'https://picsum.photos/seed/joan/400/400',
     specialties: ['Hiking & Trekking', 'Adventure Travel', 'Coffee Tours'],
     isAvailable: true,
