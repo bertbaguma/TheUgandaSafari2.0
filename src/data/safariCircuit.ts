@@ -1,0 +1,16 @@
+export const SAFARI_CIRCUIT_SUGGESTIONS: Record<string, string[]> = {
+    'entebbe': ['lake-mburo', 'kampala', 'jinja'],
+    'kampala': ['ziwa-rhino', 'lake-mburo', 'jinja'],
+    'kigali': ['bwindi', 'mgahinga'],
+    'lake-mburo': ['queen-elizabeth', 'bwindi', 'kampala', 'entebbe'],
+    'bwindi': ['queen-elizabeth', 'mgahinga', 'lake-mburo'],
+    'mgahinga': ['bwindi', 'lake-mburo'],
+    'queen-elizabeth': ['kibale', 'bwindi', 'lake-mburo'],
+    'kibale': ['queen-elizabeth', 'murchison-falls', 'semuliki', 'kampala'],
+    'semuliki': ['kibale'],
+    'ziwa-rhino': ['murchison-falls', 'kampala'],
+    'murchison-falls': ['kibale', 'kidepo-valley', 'ziwa-rhino', 'jinja'],
+    'kidepo-valley': ['murchison-falls', 'sipi-falls'],
+    'jinja': ['sipi-falls', 'kampala'],
+    'sipi-falls': ['kidepo-valley', 'jinja'],
+};

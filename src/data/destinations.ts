@@ -82,6 +82,7 @@ export const DESTINATIONS: Destination[] = [
   { id: 'entebbe', name: 'Entebbe', parkFee: 0, activities: [], description: 'A relaxed town on Lake Victoria, home to the international airport and wildlife sanctuaries.', imageUrl: 'https://picsum.photos/seed/entebbe/800/600', flyInAirstrip: true, keywords: ['EBB', 'airport', 'Lake Victoria', 'UWEC', 'Uganda Wildlife Education Centre', 'Botanical Gardens', 'Ngamba Island Chimpanzee Sanctuary'] },
 ];
 
+// Defines the logical next destinations from a given point to help guide users.
 export const SAFARI_CIRCUIT_SUGGESTIONS: Record<string, string[]> = {
     'entebbe': ['lake-mburo', 'kampala', 'jinja'],
     'kampala': ['ziwa-rhino', 'lake-mburo', 'jinja'],
